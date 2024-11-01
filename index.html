@@ -1,0 +1,405 @@
+<style>
+	/*вот так ставятся комментарии внутри style*/
+	.header{
+		height: 70px;
+		background: rgb(227,223,223);
+		background: linear-gradient(90deg, rgba(227,223,223,1) 19%, rgba(144,144,144,1) 49%, rgba(231,228,228,1) 85%);
+	}
+	.charts-c{
+		width: 850px;
+		height:850px;
+		background: white;
+		margin: auto;
+		font-family: arial;
+	}
+	.header-c{
+		height: 70px;
+		margin: auto;
+		width: 850px;
+		display: flex;
+	}
+	.charts-s{
+		height: 50px;
+		background: white;
+		margin: auto;
+		width: 850px;
+		margin-top: 5px;
+		display: flex;
+	}
+	.charts-up{
+		height: 100px;
+		background: rgb(31,204,127);
+		background: linear-gradient(90deg, rgba(31,204,127,1) 10%, rgba(179,255,212,1) 30%, rgba(39,255,0,1) 54%, rgba(26,135,75,1) 79%);
+		margin: auto;
+		width: 850px;
+		margin-top: 10px;
+		display: flex;
+		border-radius: 4px;
+	}
+	.charts-new{
+		height: 100px;
+		background: rgb(63,94,251);
+		background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+		margin: auto;
+		width: 850px;
+		margin-top: 10px;
+		display: flex;
+		border-radius: 4px;
+	}
+	.charts-down{
+		height: 100px;
+		background: rgb(255,106,0);
+		background: linear-gradient(90deg, rgba(255,106,0,1) 19%, rgba(255,0,0,1) 49%, rgba(255,59,0,1) 85%, rgba(166,21,21,1) 100%);
+		margin: auto;
+		width: 850px;
+		margin-top: 10px;
+		display: flex;
+		border-radius: 4px;
+	}
+	.box-logo{
+		height: 70px;
+		width: 200px;
+	}
+	.logo-l{
+		height: 70px;
+		width: 450px;
+		padding-top: 20px;
+	}
+	.box-buttons{
+		height: 70px;
+		width: 200px;
+		text-align: center	;
+
+	}
+	.charts-rank{
+		height: 100px;
+		width: 100px;
+	}
+	.charts-info{
+		width: 400px;
+		height: 100px;
+	}
+	.charts-button{
+		height: 100px;
+		width: 200px;
+		text-align: center;
+	}
+	.charts-img{
+		width: 150px;
+		height: 100px;
+		text-align: center;
+	}
+	.img{
+		height: 100px;
+	}
+	.green-button{
+		background: green;
+		color: white;
+		height:33px ;
+		width:150px ;
+		border-radius: 10px;
+		border: none;
+		margin-top: 30px;
+	}
+	.blue-button{
+		background: blue;
+		color: white;
+		height:33px ;
+		width:170px ;
+		border-radius: 10px;
+		border: none;
+		margin-top: 30px;
+	}
+	.h2{
+		color: blue;
+	}
+	.t{
+		color: white;
+	}
+	.h1{
+		color: black;
+		text-align: center;
+	}
+	.up{
+		color: green;
+		text-align: center;
+	}
+	.new{
+		color: yellow;
+		text-align: center;
+	}
+	.down{
+		color: red;
+		text-align: center;
+	}
+	.thisweek{
+		color: white;
+		background: orange;
+		height:33px ;
+		width:150px ;
+		border-radius: 8px;
+		border: none;
+		margin-top: 10px;
+	}
+	.lastweek{
+		color: white;
+		background: red;
+		height:33px ;
+		width:150px ;
+		margin-left: 5px;
+		border-radius: 8px;
+		border: none;
+		margin-top: 10px;
+	}
+	.duration{
+		color: white;
+		background: purple;
+		height:33px ;
+		width:150px ;
+		margin-left: 5px;
+		border-radius: 8px;
+		border: none;
+		margin-top: 10px;
+	}
+
+	.peak{
+		color: white;
+		background: green;
+		height:33px ;
+		width:150px ;
+		margin-left: 5px;
+		border-radius: 8px;
+		border: none;
+		margin-top: 10px;
+	}
+	.bildboard{
+		width: 200px;
+		margin-top: 10px;
+		
+	}
+	.white{
+		color: white;
+		font-family: arial;
+		margin-left: 20px;
+	}
+	.margin-20{
+		margin-left: 20px;
+	}
+</style>
+<!-- 1 уровень. шапка -->
+<div class="header">
+	<!-- 2 уровень. выравнивание шапки -->
+	<div class="header-c">
+		<!-- 3 уровень -->
+		<!-- лого -->
+		<div class="box-logo">
+			<img src="logo.png" class="bildboard">
+		</div>
+		<!-- ссылки -->
+		<div class="logo-l">
+			<a href="" class="white">CHARTS</a>
+			<a href="" class="white">NEWS</a>
+			<a href="" class="down margin-20" >VIDIO</a>
+			<a href="" class="new margin-20">PHOTO</a>
+		</div>
+		<!-- кнопка подписаться -->
+		<div class="box-buttons">
+			<button class="duration">Subscribe</button>
+		</div>
+	</div>
+</div>
+
+<!-- 1 уровень. чат-контейнер -->
+<div class="charts-c">
+	<!-- 2 уровень -->
+	<!-- для кнопок сортировки -->
+	<div class="charts-s">
+		<button class="thisweek">This week</button>
+		<button class="lastweek">Last week</button>
+		<button class="Peak">Peak</button>
+		<button class="duration">Duration</button>
+	</div>
+	<!--все треки в чарте -->
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank" >
+			<h1 class="h1">1</h1>
+			<p class="up">Up</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h2 class="h2">Savage Love (Laxed - Siren Beat)</h2>
+			<p class="t">Jaws 685 x Jason Derulo x BTS</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="blue-button">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="1.jpg"class="img">	
+		</div>
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="h1">2</h1>
+			<p class="new">New</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h2 class="h2">Dynamite</h2>
+			<p class="t">BTS</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="green-button">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="2.jpg"class="img">
+		</div>		
+	</div>
+
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="h1">3</h1>
+			<p class="new">New</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h2 class="h2">WAP</h2>
+			<p class="t">Cardi B featuring Megan Thee Stallion</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="green-button">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="3.jpg"class="img">
+		</div>		
+	</div>
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="h1">4</h1>
+			<p class="up">Up</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h2 class="h2">Mood</h2>
+			<p class="t">24kGoldn featuring iann dior</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="green-button">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="4.jpg"class="img">
+		</div>		
+	</div>
+
+	<!-- трек down -->
+	<div class="charts-down">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="h1">5</h1>
+			<p class="down">Down</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h2 class="h2">Laugh Now Cry Later</h2>
+			<p class="t">Drake featuring Lil Durk</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="green-button">Купить</button>	
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="5.jpg"class="img">
+		</div>		
+	</div>
+	<!-- трек new -->
+	<div class="charts-new">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="h1">6</h1>
+			<p class="new">New</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h2 class="h2">Blinding Lights</h2>
+			<p class="t">The Weekend</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="blue-button">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="6.jpg"class="img">
+		</div>		
+	</div>
+
+	<!-- трек up -->
+	<div class="charts-up">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1 class="h1">7</h1>
+			<p class="up">Up</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<h2 class="h2">Rockstar</h2>
+			<p class="t">DaBaby Featuring Roddy Ricch</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="blue-button">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="7.jpg"class="img">
+		</div>		
+	</div>
+</div>
+<!--  
+1.Savage Love (Laxed - Siren Beat)
+Jaws 685 x Jason Derulo x BTS
+
+2.Dynamite
+BTS
+
+3.WAP
+Cardi B featuring Megan Thee Stallion
+
+4.Mood
+24kGoldn featuring iann dior
+
+5.Laugh Now Cry Later
+Drake featuring Lil Durk
+
+6.Blinding Lights
+The Weekend
+
+7.Rockstar
+DaBaby Featuring Roddy Ricch
+-->
